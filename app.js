@@ -69,7 +69,9 @@ app.use((req, res, next) => {
 app.get("/", (req, res) => {
   res.render("home");
 });
-
+app.get("/home1", (req, res) => {
+  res.send('ok working');
+});
 // Routes
 app.use(productRoutes);
 app.use(reviewRoutes);
